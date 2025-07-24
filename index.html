@@ -159,8 +159,7 @@
       background-color: orange;
       color: white;
     }
-
-    /* Responsive Styles */
+     /* Responsive Styles */
     @media screen and (max-width: 768px) {
       header {
         flex-direction: column;
@@ -213,6 +212,741 @@
         width: 60px !important;
       }
     }
+    /* our story section */
+    .story-section {
+      background: url('./assets/bkg-img1.jpg') no-repeat center center/cover;
+      padding: 60px 20px;
+    }
+
+    .story-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    
+    .side-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content-box {
+      background: white;
+      border: 10px solid #000;
+      padding: 40px 30px;
+      text-align: center;
+      max-width: 550px;
+      flex: 1;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-box h4 {
+      font-family: 'Cursive', sans-serif;
+      color: #ab6e4f;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .content-box h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .content-box p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .story-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .side-image {
+        width: 100px;
+        height: 100px;
+      }
+
+      .content-box {
+        padding: 30px 20px;
+        border-width: 6px;
+      }
+
+      .content-box h2 {
+        font-size: 22px;
+      }
+
+      .content-box p {
+        font-size: 15px;
+      }
+    }
+
+    /* Banner Section */
+.banner-section {
+  background: url('./assets/bkg-img3.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+  border-radius: 10px;
+}
+
+.banner-subtitle {
+  font-size: 24px;
+  color: #eec78c;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.banner-divider span {
+  width: 50px;
+  height: 2px;
+  background-color: #eec78c;
+}
+
+.banner-divider .star {
+  font-size: 20px;
+  color: #eec78c;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .banner-subtitle {
+    font-size: 18px;
+  }
+
+  .banner-divider span {
+    width: 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .banner-title {
+    font-size: 22px;
+  }
+
+  .banner-subtitle {
+    font-size: 16px;
+  }
+}
+
+/* offer section*/
+.offers-section {
+  padding: 60px 20px;
+}
+
+.offers-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+/* Left Images */
+.offers-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 1;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hover-plus {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .hover-plus {
+  opacity: 1;
+}
+
+/* Right Content */
+.offers-content {
+  flex: 1;
+  min-width: 320px;
+}
+
+.subtitle {
+  color: #b57344;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  
+}
+
+.menu-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-info h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.menu-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #b57344;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offers-images {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .offers-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    align-self: flex-end;
+  }
+}
+
+  /* exceptional services Section */
+.banner-sec {
+  background: url('./assets/bkg-img4.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-cont {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+  border-radius: 10px;
+}
+
+.banner-sub {
+  font-size: 24px;
+  color: #eec78c;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.banner-tit {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner-divi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.banner-divi span {
+  width: 50px;
+  height: 2px;
+  background-color: #eec78c;
+}
+
+.banner-divi .sta {
+  font-size: 20px;
+  color: #eec78c;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .banner-tit {
+    font-size: 28px;
+  }
+
+  .banner-sub {
+    font-size: 18px;
+  }
+
+  .banner-divi span {
+    width: 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .banner-tit {
+    font-size: 22px;
+  }
+
+  .banner-sub {
+    font-size: 16px;
+  }
+} 
+
+/*  corparte catering section*/
+
+   .slider-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      padding: 60px 20px;
+    }
+
+    .slide {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .slide.active {
+      display: flex;
+    }
+
+    .slide img {
+      max-width: 100%;
+      height: auto;
+      flex: 1 1 50%;
+      padding: 10px;
+    }
+
+    .slide-content {
+      flex: 1 1 50%;
+      padding: 10px 30px;
+    }
+
+    .slide-content h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .slide-content h3 {
+      font-size: 20px;
+      color: #a87676;
+      margin-bottom: 5px;
+    }
+
+    .slide-content p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #a87676;
+    }
+
+    @media (max-width: 768px) {
+      .slide {
+        flex-direction: column;
+      }
+      .slide img,
+      .slide-content {
+        flex: 1 1 100%;
+        padding: 10px;
+        text-align: center;
+      }
+      .slide-content h2 {
+        font-size: 24px;
+      }
+    }
+
+     /* exceptional services Section */
+.banne-sec {
+  background: url('./assets/bkg-img5.jpg') no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.banne-cont {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+  border-radius: 10px;
+}
+
+.banne-sub {
+  font-size: 24px;
+  color: #eec78c;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.banne-tit {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banne-divi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.banne-divi span {
+  width: 50px;
+  height: 2px;
+  background-color: #eec78c;
+}
+
+.banne-divi .st {
+  font-size: 20px;
+  color: #eec78c;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .banne-tit {
+    font-size: 28px;
+  }
+
+  .banne-sub {
+    font-size: 18px;
+  }
+
+  .banne-divi span {
+    width: 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .banne-tit {
+    font-size: 22px;
+  }
+
+  .banne-sub {
+    font-size: 16px;
+  }
+} 
+ /* form section */
+.reservation-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    .reservation-section img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .reservation-form {
+      max-width: 350px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .reservation-form h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .reservation-form p {
+      font-size: 16px;
+      color: #a1644a;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .reservation-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .reservation-form button {
+      background-color: #1c1f26;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .reservation-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .reservation-section img {
+        width: 90%;
+      }
+
+      .reservation-form {
+        width: 90%;
+      }
+    }
+
+    /*footer section*/
+    .footer {
+  position: relative;
+  background: url('your-background.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hashtag {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 100px;
+  margin: 20px auto;
+}
+
+.address,
+.reservation,
+.hours {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.reservation span {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.newsletter button {
+  background: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.bottom-nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.bottom-nav p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bottom-nav ul li {
+  margin: 5px 10px;
+}
+
+.bottom-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+
+.bottom-nav ul li a:hover {
+  color: #ffc107;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter input {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
   </style>
 </head>
 
@@ -291,6 +1025,264 @@
     </div>
   </nav>
 
+  <!-- our story section-->
+  <section class="story-section">
+    <div class="story-container">
+
+      <!-- Left Spice Image -->
+      <div class="side-image">
+        <img src="./assets/spices-left.png" alt="Spice Left">
+      </div>
+
+      <!-- Center Content Box -->
+      <div class="content-box">
+        <h4>Our story</h4>
+        <h2>LOVE FOR FOOD</h2>
+        <p>
+          Welcome. This is Royal plate, Elegant & sophisticated restaurant template.
+          Royal plate offers different home page layouts with smart and unique design,
+          showcasing beautifully designed elements every restaurant website should have.
+          Smooth animations, fast loading and engaging user experience are just some of
+          the features this template offers. <br><br>
+          So, give it a try and dive into a world of royal restaurant websites.
+        </p>
+      </div>
+
+      <!-- Right Spice Image -->
+      <div class="side-image">
+        <img src="./assets/spices-right.png" alt="Spice Right">
+      </div>
+
+    </div>
+  </section>
+  <!-- Banner section-->
+    
+ <section class="banner-section">
+    <div class="banner-content">
+      <h4 class="banner-subtitle">Exquisite cuisine</h4>
+      <h1 class="banner-title">A FEAST FOR YOUR SENSES</h1>
+      <div class="banner-divider">
+        <span></span>
+        <i class="star">✦</i>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- offer section-->
+   <section class="offers-section">
+  <div class="offers-container">
+
+    <!-- Left Grid Image Area -->
+    <div class="offers-images">
+      <div class="img-box"><img src="./assets/gallery-1s.jpg" alt=""><div class="hover-plus">+</div></div>
+      <div class="img-box"><img src="./assets/gallery-2s.jpg" alt=""><div class="hover-plus">+</div></div>
+      <div class="img-box"><img src="./assets/gallery-3s.jpg" alt=""><div class="hover-plus">+</div></div>
+      <div class="img-box"><img src="./assets/gallery-4s.jpg" alt=""><div class="hover-plus">+</div></div>
+    </div>
+
+    <!-- Right Text Area -->
+    <div class="offers-content">
+      <h4 class="subtitle">From the menu</h4>
+      <h2 class="title">SPECIAL OFFERS</h2>
+
+      <div class="menu-item">
+        <img src="./assets/menu-item-01.png" alt="Royal Breakfast">
+        <div class="menu-info">
+          <h5>ROYAL BREAKFAST</h5>
+          <p>Fried eggs, fried bacon, toast, fresh tomato salad, cup of coffee or tea</p>
+        </div>
+        <div class="price">$15</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/menu-item-02.png" alt="Royal Brunch">
+        <div class="menu-info">
+          <h5>ROYAL BRUNCH</h5>
+          <p>Warm chicken wings, portobello mushrooms, fresh mozzarella, coffee or tea</p>
+        </div>
+        <div class="price">$22</div>
+      </div>
+
+      <div class="menu-item">
+        <img src="./assets/menu-item-03.png" alt="Royal Dinner">
+        <div class="menu-info">
+          <h5>ROYAL DINNER</h5>
+          <p>Grilled beef steak, red potatoes, rosemary, mushrooms sauce, wine</p>
+        </div>
+        <div class="price">$28</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+ <!-- Banner section-->
+    
+ <section class="banner-sec">
+    <div class="banner-cont">
+      <h4 class="banner-sub">For Your Special Day</h4>
+      <h1 class="banner-tit">EXCEPTIONAL CATERING SERVICES</h1>
+      <div class="banner-divi">
+        <span></span>
+        <i class="sta">✦</i>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Corporate Catering -->
+  <div class="slider-container">
+    <div class="slide active">
+      <img src="./assets/img-10.jpg" alt="Slide 1">
+      <div class="slide-content">
+        <h3>Catering</h3>
+        <h2>CORPORATE EVENTS</h2>
+        <p><strong>• Meetings.  • Team buildings.  • Corporate parties</strong></p>
+        <p>
+          Planning an important business meeting with your partners? Impress them with lunch in Royal Plate.
+          Royal Plate covers everything from business lunches, to custom team building programs and corporate parties.
+        </p>
+        <p><a href="#">MORE DETAILS →</a></p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./assets/img-09.jpg" alt="Slide 2">
+      <div class="slide-content">
+        <h3>Catering</h3>
+        <h2>WEDDING RECEPTIONS</h2>
+        <p><strong>• Banquets.  • Receptions.  • Dinner parties</strong></p>
+        <p>
+          Celebrate your special day with elegance. We offer catering services for wedding receptions with a wide range
+          of delicious menu options and professional service.
+        </p>
+        <p><a href="#">MORE DETAILS →</a></p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./assets/img-10.jpg" alt="Slide 3">
+      <div class="slide-content">
+        <h3>Catering</h3>
+        <h2>BIRTHDAY PARTIES</h2>
+        <p><strong>• Kids.  • Adults.  • Custom Themes</strong></p>
+        <p>
+          Make birthdays memorable with our tailored catering services. Choose from fun kid-friendly menus or elegant
+          dining options for adults.
+        </p>
+        <p><a href="#">MORE DETAILS →</a></p>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+  </div>
+  <!-- Banner section-->
+    
+ <section class="banne-sec">
+    <div class="banne-cont">
+      <h4 class="banne-sub">Visit Us at Royal Place</h4>
+      <h1 class="banne-tit">ENJOYABLE & COMFORTABLE</h1>
+      <div class="banne-divi">
+        <span></span>
+        <i class="st">✦</i>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  <!-- form section-->
+
+<section class="reservation-section">
+    <img src="./assets/img-02.jpg" alt="Table Setting" />
+
+    <div class="reservation-form">
+      <p>Reservation</p>
+      <h2>BOOK YOUR TABLE</h2>
+      <hr style="width: 50px; margin: 10px auto; border: 1px solid #c4a484;">
+      <form>
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <input type="date" required />
+        <input type="time" required />
+        <input type="number" placeholder="# people" required />
+        <button type="submit">FIND A TABLE</button>
+      </form>
+    </div>
+
+    <img src="./assets/img-03.jpg" alt="Fruit Dish" />
+  </section>
+
+  <!-- footer -->
+   <footer class="footer">
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    <h3 class="hashtag">#ROYALPLATE_MOMENTS</h3>
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Royal Plate Logo">
+    </div>
+
+    <!-- Address & Info -->
+    <p class="address">22 Royal Street, Sundance Avenue, New York</p>
+    <p class="reservation">RESERVATIONS NUMBER: <span>+00 25 854 78521</span></p>
+    <p class="hours">
+      WORKING HOURS:<br>
+      MON - FRI: 08:00 AM - 10:00 PM<br>
+      SAT - SUN: 10:00 AM - 11:00 PM
+    </p>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <input type="email" placeholder="Subscribe to our newsletter feed">
+      <button type="submit">SUBMIT</button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <p>© Royal Plate 2016. All rights reserved.</p>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">RESERVATIONS</a></li>
+        <li><a href="#">CATERING</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+      });
+      currentSlide = index;
+    }
+  </script>
+  
   <script>
     const toggle = document.querySelector(".menu-toggle");
     const navbar = document.querySelector(".navbar");
